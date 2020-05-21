@@ -12,6 +12,8 @@
 <dd></dd>
 <dt><a href="#HeaderPrepareFunction">HeaderPrepareFunction(req)</a> ⇒ <code>Object</code></dt>
 <dd></dd>
+<dt><a href="#ProxyUrlProcess">ProxyUrlProcess(req)</a> ⇒ <code>Promise</code></dt>
+<dd></dd>
 </dl>
 
 ## Typedefs
@@ -33,6 +35,10 @@
 The express proxy middleware.
 
 **Kind**: Exported function  
+**Throws**:
+
+- <code>Error</code> When the value in option.urlsToProxy is not a string or not a function with return value of Promise, an error will raise up.
+
 
 | Param | Type |
 | --- | --- |
@@ -58,6 +64,15 @@ The express proxy middleware.
 | --- | --- | --- |
 | req | <code>http.IncomingMessage</code> | The express request object. |
 
+<a name="ProxyUrlProcess"></a>
+
+## ProxyUrlProcess(req) ⇒ <code>Promise</code>
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| req | <code>http.IncomingMessage</code> | 
+
 <a name="ProxyOnErrorCallback"></a>
 
 ## ProxyOnErrorCallback : <code>function</code>
@@ -78,7 +93,7 @@ The options for proxy request
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| [urlsToProxy] | <code>Object.&lt;String, String&gt;</code> |  | The map of url prefix and backend base url. |
+| [urlsToProxy] | <code>Object.&lt;String, (String\|ProxyUrlProcess)&gt;</code> |  | The map of url prefix and backend base url. |
 | [onError] | [<code>ProxyOnErrorCallback</code>](#ProxyOnErrorCallback) |  |  |
 | [dataPrepare] | [<code>DataPrepareFunction</code>](#DataPrepareFunction) |  |  |
 | [headerPrepare] | [<code>HeaderPrepareFunction</code>](#HeaderPrepareFunction) |  |  |

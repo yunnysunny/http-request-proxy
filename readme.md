@@ -1,6 +1,23 @@
 # http-request-proxy
 It's a package aimed at proxy http request in expressjs. Using this package, you can setup a proxy server easily.
 
+[![build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
+[![David deps][david-image]][david-url]
+[![node version][node-image]][node-url]
+
+[npm-url]: https://npmjs.org/package/http-request-proxy
+[travis-image]: https://img.shields.io/travis/yunnysunny/http-request-proxy.svg?style=flat-square
+[travis-url]: https://travis-ci.org/yunnysunny/http-request-proxy
+[coveralls-image]: https://img.shields.io/coveralls/yunnysunny/http-request-proxy.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/yunnysunny/http-request-proxy?branch=master
+[david-image]: https://img.shields.io/david/yunnysunny/http-request-proxy.svg?style=flat-square
+[david-url]: https://david-dm.org/yunnysunny/http-request-proxy
+[node-image]: https://img.shields.io/badge/node.js-%3E=_6-green.svg?style=flat-square
+[node-url]: http://nodejs.org/download/
+
+[![NPM](https://nodei.co/npm/node-http-request-proxy.png?downloads=true)](https://nodei.co/npm/node-http-request-proxy/) 
+
 ## Install
 
 ```npm install http-request-proxy```
@@ -89,7 +106,44 @@ But when you want to support uploading in this mode,you should add `connect-mult
 
 It also can set the parameter of `timeout` to control how long you can bear before the response return.
 
+### Using an asynchronous function to determine the destination of backend
 
+Some time you want to request a backend server with dynamic address, and you may request to a dispatcher server to get the backend's ip first. For this purpose, http-request-proxy supply a feature of setting the value of `urlsToProxy` to an an asynchronous function to determine the destination of backend.
+
+```javascript
+const express = require('express');
+const path = require('path');
+
+
+const {
+    slogger,
+    TIMEOUT_PROXY,
+    NOT_SUPPORT_URL
+} = require('./config');
+const requestRecordFilter = require('@yunnysunny/request-logging');
+const afterParserProxy = require('http-request-proxy');
+
+const app = express();
+app.enable('trust proxy');
+
+app.set('port', 3003);
+
+app.use(requestRecordFilter());
+app.use(afterParserProxy({
+    urlsToProxy:{
+        '/i/back': function(req) {
+            return new Promise(function(resolve, reject) {
+                if (req.path ==='/i/back' + NOT_SUPPORT_URL) {
+                    return reject('not support');
+                }
+                resolve('http://localhost:3004');
+            });
+        }
+    },
+    beforeParser: true,
+    timeout: TIMEOUT_PROXY
+}));
+```
 
 ## API
 
