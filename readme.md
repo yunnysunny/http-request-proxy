@@ -20,7 +20,7 @@ It's a package aimed at proxy http request in expressjs. Using this package, you
 
 ## Install
 
-```npm install http-request-proxy```
+```npm install http-request-proxy --save```
 or
 ```yarn add http-request-proxy```
 
