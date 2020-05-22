@@ -8,7 +8,7 @@ It's a package aimed at proxy http request in expressjs. Using this package, you
 
 [npm-url]: https://npmjs.org/package/http-request-proxy
 [action-image]: https://github.com/yunnysunny/http-request-proxy/workflows/ci-test/badge.svg
-[action-url]: https://github.com/yunnysunny/http-request-proxy/workflows/ci-test
+[action-url]: https://github.com/yunnysunny/http-request-proxy/actions?query=workflow%3Aci-test
 [coveralls-image]: https://img.shields.io/coveralls/yunnysunny/http-request-proxy.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/yunnysunny/http-request-proxy?branch=master
 [david-image]: https://img.shields.io/david/yunnysunny/http-request-proxy.svg?style=flat-square
