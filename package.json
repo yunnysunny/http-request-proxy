@@ -7,6 +7,9 @@
     "lib": "lib",
     "test": "test"
   },
+  "engines": {
+    "node": ">=10.0"
+  },
   "scripts": {
     "test": "nyc mocha --recursive test/mocha --timeout 999999 --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls",

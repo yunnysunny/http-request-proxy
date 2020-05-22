@@ -13,7 +13,7 @@ It's a package aimed at proxy http request in expressjs. Using this package, you
 [coveralls-url]: https://coveralls.io/r/yunnysunny/http-request-proxy?branch=master
 [david-image]: https://img.shields.io/david/yunnysunny/http-request-proxy.svg?style=flat-square
 [david-url]: https://david-dm.org/yunnysunny/http-request-proxy
-[node-image]: https://img.shields.io/badge/node.js-%3E=_6-green.svg?style=flat-square
+[node-image]: https://img.shields.io/badge/node.js-%3E=_10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 
 [![NPM](https://nodei.co/npm/node-http-request-proxy.png?downloads=true)](https://nodei.co/npm/node-http-request-proxy/) 
