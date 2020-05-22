@@ -1,14 +1,14 @@
 # http-request-proxy
 It's a package aimed at proxy http request in expressjs. Using this package, you can setup a proxy server easily.
 
-[![build status][travis-image]][travis-url]
+[![build status][action-image]][action-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![David deps][david-image]][david-url]
 [![node version][node-image]][node-url]
 
 [npm-url]: https://npmjs.org/package/http-request-proxy
-[travis-image]: https://img.shields.io/travis/yunnysunny/http-request-proxy.svg?style=flat-square
-[travis-url]: https://travis-ci.org/yunnysunny/http-request-proxy
+[action-image]: https://github.com/yunnysunny/http-request-proxy/workflows/ci-test/badge.svg
+[action-url]: https://github.com/yunnysunny/http-request-proxy/workflows/ci-test
 [coveralls-image]: https://img.shields.io/coveralls/yunnysunny/http-request-proxy.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/yunnysunny/http-request-proxy?branch=master
 [david-image]: https://img.shields.io/david/yunnysunny/http-request-proxy.svg?style=flat-square
