@@ -5,7 +5,7 @@ const app = require('../express/src/app_promise');
 const {TIMEOUT_PROXY, NOT_SUPPORT_URL} = require('../express/src/config');
 
 describe('prepare after parser test#', function() {
-    it('should get 503 when promise reject', function(done) {
+    it('should get 502 when promise reject', function(done) {
         const data = {
             timeout: TIMEOUT_PROXY + 1000,
         };
@@ -13,7 +13,7 @@ describe('prepare after parser test#', function() {
         request(app)
             .get('/i/back' + NOT_SUPPORT_URL)
             .query(data)
-            .expect(503)
+            .expect(502)
             .end(function(err, res) {
                 if (err) {
                     return done(err);
