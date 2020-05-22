@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "nyc mocha --recursive src/test/mocha --timeout 999999 --exit",
+    "test": "nyc mocha --recursive test/mocha --timeout 999999 --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "doc": "jsdoc2md index.js lib/*.js > docs/api.md"
   },
