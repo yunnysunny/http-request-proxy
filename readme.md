@@ -59,9 +59,9 @@ In this mode , you should set the parameter `beforeParser` to true. And you can 
 
 ### With body-parser
 
-When you want to modify the request parameter in headers or body, you should use this mode.
+When you want to modify the request parameter in headers or body, you should use this mode. The `dataPrepare` is an function to modify the request parameters, which merged from querystirng and body. The `headerPrepare` is an function to modify the request headers, if it not given , the default headers configuration is `{'User-Agent': 'http-proxy-server'}`.
 
-```java
+```javascript
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
