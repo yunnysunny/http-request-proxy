@@ -39,6 +39,7 @@ app.use(afterParserProxy({
             [HEADER_SEQ_NUM]: Number(req.get(HEADER_SEQ_NUM)) + 1
         };
     },
+    jsonDisabled: true
 }));
 
 

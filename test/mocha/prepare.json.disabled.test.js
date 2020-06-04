@@ -1,6 +1,6 @@
 const request = require('supertest');
 const {expect} = require('chai');
-const app = require('../express/src/app_prepare');
+const app = require('../express/src/app_json_disabled');
 const {HEADER_SEQ_NUM} = require('../express/src/config');
 
 describe('prepare after parser test#', function() {
