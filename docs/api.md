@@ -35,10 +35,6 @@
 The express proxy middleware.
 
 **Kind**: Exported function  
-**Throws**:
-
-- <code>Error</code> When the value in option.urlsToProxy is not a string or not a function with return value of Promise, an error will raise up.
-
 
 | Param | Type |
 | --- | --- |
@@ -99,4 +95,5 @@ The options for proxy request
 | [headerPrepare] | [<code>HeaderPrepareFunction</code>](#HeaderPrepareFunction) |  |  |
 | [beforeParser] | <code>Boolean</code> |  |  |
 | [timeout] | <code>Number</code> | <code>10000</code> |  |
+| [jsonDisabled] | <code>Boolean</code> |  | When it set true, the type of application/json request will be transformed into application/x-www-form-urlencoded |
 
