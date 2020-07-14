@@ -97,4 +97,5 @@ The options for proxy request
 | [beforeParser] | <code>Boolean</code> |  |  |
 | [timeout] | <code>Number</code> | <code>10000</code> |  |
 | [jsonDisabled] | <code>Boolean</code> |  | When it set true, the type of application/json request will be transformed into application/x-www-form-urlencoded |
+| [agent] | <code>http.Agent</code> |  | The instance of the class of http.Agent. |
 
