@@ -8,7 +8,7 @@
 ## Functions
 
 <dl>
-<dt><a href="#DataPrepareFunction">DataPrepareFunction(data)</a> ⇒ <code>Object</code></dt>
+<dt><a href="#DataPrepareFunction">DataPrepareFunction(data, req)</a> ⇒ <code>Object</code></dt>
 <dd></dd>
 <dt><a href="#HeaderPrepareFunction">HeaderPrepareFunction(req)</a> ⇒ <code>Object</code></dt>
 <dd></dd>
@@ -42,13 +42,14 @@ The express proxy middleware.
 
 <a name="DataPrepareFunction"></a>
 
-## DataPrepareFunction(data) ⇒ <code>Object</code>
+## DataPrepareFunction(data, req) ⇒ <code>Object</code>
 **Kind**: global function  
 **Returns**: <code>Object</code> - The data after prepared.  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | data | <code>Object</code> | The original request data, merged by querystring and body. |
+| req | <code>http.IncomingMessage</code> | The http request object. |
 
 <a name="HeaderPrepareFunction"></a>
 

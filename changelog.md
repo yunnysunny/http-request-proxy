@@ -1,3 +1,7 @@
+# v0.3.0
+## Add
+1. Add the parameter of `agent` to enable `keep-alive` in http request.
+
 # v0.2.0
 ## Add
 1. Add the parameter of `jsonDisabled` to force the request of `application/json` to be transformed into `application/x-www-form-urlencoded`.

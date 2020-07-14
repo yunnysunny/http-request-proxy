@@ -2,9 +2,16 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const multipart = require('connect-multiparty');
+const http = require('http');
+
+
 
 const routes = require('./routes/index');
-
+const agent = new http.Agent({
+    keepAlive: true,
+    maxSockets: 32,
+    keepAliveMsecs: 3000,
+});
 const {
     slogger,
 } = require('./config');
@@ -27,7 +34,8 @@ app.use( multipart({}));
 app.use(afterParserProxy({
     urlsToProxy:{
         '/i/back': 'http://localhost:3004'
-    }
+    },
+    agent
 }));
 
 
