@@ -1,3 +1,7 @@
+# v0.4.0
+## Add
+1. Add the property of `_res_data` to `http.ServerResponse` when come across proxy request error, such as the request is timeout or the backend is broken.
+
 # v0.3.0
 ## Add
 1. Add the parameter of `agent` to enable `keep-alive` in http request.
