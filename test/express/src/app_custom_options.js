@@ -12,7 +12,6 @@ const {
     HEADER_REQ_NUM
 } = require('./config');
 const requestRecordFilter = require('@yunnysunny/request-logging');
-const {filter: requestValidator} = require('validator-param');
 const afterParserProxy = require('../../../');
 const {doSign} = require('./helpers/auth_helper');
 
@@ -54,16 +53,6 @@ app.use(afterParserProxy({
 }));
 
 
-// app.use(modifyParser);
-app.use(requestValidator({
-    basePath: path.join(__dirname, './validators'),
-    urlPrefix: '/i/',
-    filenameReplaces: {
-        '_': '/'
-    },
-    filenameSuffix: '_schema.js'
-}));
-
 app.use('/', routes);
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -76,17 +65,15 @@ app.use(function(req, res, next) {
 });
 
 // error handlers
+// eslint-disable-next-line no-unused-vars
 app.use(function(err, req, res, next) {
     const status = err.status;
     if (status === 404) {
-        return res.status(404).send(err.message || '未知异常');
+        return res.status(404).send(err.message || 'unknown error');
     }
     res.status(status || 500);
-    slogger.error('发现应用未捕获异常', err);
-    res.send({
-        msg: err.message || '未知异常',
-        code: 0xffff
-    });
+    slogger.error('found an unknown error', err);
+    res.send(err.message || 'unknown error');
 });
 
 

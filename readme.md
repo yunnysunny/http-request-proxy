@@ -145,6 +145,49 @@ app.use(afterParserProxy({
 }));
 ```
 
+
+### Using custom configuration to override the warpper's
+
+Sometime you may want to set a special configuration to certain backend server, the others use default setting. You can set one value of `urlsToProxy` to an object, the properties of the object will override the wrapper's.
+
+```javascript
+const express = require('express');
+const path = require('path');
+
+
+const {
+    slogger,
+    TIMEOUT_PROXY,
+    NOT_SUPPORT_URL
+} = require('./config');
+const requestRecordFilter = require('@yunnysunny/request-logging');
+const afterParserProxy = require('http-request-proxy');
+
+const app = express();
+app.enable('trust proxy');
+
+app.set('port', 3003);
+
+app.use(requestRecordFilter());
+app.use(afterParserProxy({
+    urlsToProxy:{
+        '/i/back': {
+            url: function(req) {
+                return new Promise(function(resolve, reject) {
+                    if (req.path ==='/i/back' + NOT_SUPPORT_URL) {
+                        return reject('not support');
+                    }
+                    resolve('http://localhost:3004');
+                });
+            },
+            timeout: TIMEOUT_CUSTOM
+        }
+    },
+    timeout: TIMEOUT_PROXY
+}));
+```
+The timeout of `/i/back` will use `TIMEOUT_CUSTOM`, the others use `TIMEOUT_PROXY`.
+
 ## API
 
 See the document of [api](docs/api.md).
