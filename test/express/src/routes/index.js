@@ -43,4 +43,8 @@ router.get('/error', function(req, res) {
     throw new Error('trigger an error');
 });
 
+router.get('/custom', function(req, res) {
+    res.send(req.query);
+});
+
 module.exports = router;
