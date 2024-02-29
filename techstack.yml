@@ -1,0 +1,258 @@
+repo_name: yunnysunny/http-request-proxy
+report_id: d16ad2164b59ff9244c1c884173dfd08
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T19:55:23+00:00'
+requested_by: yunnysunny
+provider: github
+branch: master
+detected_tools_count: 17
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy
+  detection_source: Repo Metadata
+- name: ExpressJS
+  description: Sinatra inspired web development framework for node.js -- insanely
+    fast, flexible, and simple
+  website_url: http://expressjs.com/
+  version: 4.17.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/1163/hashtag.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+- name: Chai
+  description: A BDD / TDD assertion library
+  website_url: http://chaijs.com/
+  version: 4.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/1725/chai.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+- name: Coveralls
+  description: Track your project's code coverage over time, changes to files, and
+    badge your GitHub repo
+  website_url: https://coveralls.io/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Code Coverage
+  image_url: https://img.stackshare.io/service/680/a43e4a04cb9f778842de43f95db59a14.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/.github/workflows/nodejs.yml
+  detection_source: ".github/workflows/nodejs.yml"
+  last_updated_by: 白一梓
+  last_updated_on: 2020-05-22 05:46:36.000000000 Z
+- name: Mocha
+  description: Simple, flexible, fun javascript test framework for node.js &amp; the
+    browser
+  website_url: http://mochajs.org/
+  version: 7.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/832/mocha.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-22 06:00:32.000000000 Z
+- name: SuperTest
+  description: A library for testing node.js HTTP servers
+  website_url: https://www.npmjs.com/package/supertest
+  version: 4.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+- name: Travis CI
+  description: A hosted continuous integration service for open source and private
+    projects
+  website_url: http://travis-ci.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/.travis.yml
+  detection_source: ".travis.yml"
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+- name: async
+  description: Higher-order functions and common patterns for asynchronous code
+  package_url: https://www.npmjs.com/async
+  version: 3.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15851/default_a2f722724df977d0f7752839e5d8845ab41f69d5.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+  vulnerabilities:
+  - name: Prototype Pollution in async
+    cve_id: CVE-2021-43138
+    cve_url: https://github.com/advisories/GHSA-fwr7-v2mv-hh25
+    detected_date: Apr 13
+    severity: high
+    first_patched: 3.2.2
+- name: body-parser
+  description: Node.js body parsing middleware
+  package_url: https://www.npmjs.com/body-parser
+  version: 1.19.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15906/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+- name: connect-multiparty
+  description: Multipart parsing middleware for connect using multiparty
+  package_url: https://www.npmjs.com/connect-multiparty
+  version: 2.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18743/default_153fa9ed9bbcef0745fbdb79cb4a6436fa25b693.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+- name: express
+  description: Fast, unopinionated, minimalist web framework
+  package_url: https://www.npmjs.com/express
+  version: 4.17.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+  vulnerabilities:
+  - name: qs vulnerable to Prototype Pollution
+    cve_id: CVE-2022-24999
+    cve_url: https://github.com/advisories/GHSA-hrpp-h998-j3pp
+    detected_date: Dec 7
+    severity: high
+    first_patched: 4.17.3
+- name: jsdoc-to-markdown
+  description: Generates markdown API documentation from jsdoc annotated source code
+  package_url: https://www.npmjs.com/jsdoc-to-markdown
+  version: 5.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16276/default_b5c8f3c8e46d368f74a982d06d7f13291fe651ea.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+- name: nyc
+  description: The Istanbul command line interface
+  package_url: https://www.npmjs.com/nyc
+  version: 15.0.1
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15837/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-05-21 08:25:31.000000000 Z
+- name: request
+  description: Simplified HTTP request client
+  package_url: https://www.npmjs.com/request
+  version: 2.88.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15823/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/yunnysunny/http-request-proxy/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: yunnysunny
+  last_updated_on: 2020-06-07 13:00:38.000000000 Z
+  vulnerabilities:
+  - name: Server-Side Request Forgery in Request
+    cve_id: CVE-2023-28155
+    cve_url: https://github.com/advisories/GHSA-p8p7-x288-28g6
+    detected_date: Mar 17
+    severity: moderate
+    first_patched: 
