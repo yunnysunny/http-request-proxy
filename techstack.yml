@@ -2,7 +2,7 @@ repo_name: yunnysunny/http-request-proxy
 report_id: d16ad2164b59ff9244c1c884173dfd08
 version: 0.1
 repo_type: Public
-timestamp: '2024-02-05T15:54:51+00:00'
+timestamp: '2024-02-29T19:55:23+00:00'
 requested_by: yunnysunny
 provider: github
 branch: master
@@ -99,7 +99,7 @@ tools:
   last_updated_by: yunnysunny
   last_updated_on: 2020-05-22 06:00:32.000000000 Z
 - name: SuperTest
-  description: 'A library for testing node.js HTTP servers '
+  description: A library for testing node.js HTTP servers
   website_url: https://www.npmjs.com/package/supertest
   version: 4.0.2
   license: MIT
